@@ -1,0 +1,7 @@
+pip install -t dependencies -r requirements.txt --platform manylinux2014_x86_64 --target ./python --only-binary=:all:
+cd python
+powershell Compress-Archive -Path .\* -DestinationPath ../aws-lambda-deployment.zip
+cd ..
+powershell Compress-Archive ./requirements.txt -Update aws-lambda-deployment.zip
+powershell Compress-Archive ./app/main.py -Update aws-lambda-deployment.zip
+powershell Compress-Archive ./app/ -Update aws-lambda-deployment.zip
