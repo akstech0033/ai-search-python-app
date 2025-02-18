@@ -1,0 +1,7 @@
+fastapi>=0.95.0  # Check compatibility
+uvicorn>=0.22.0  # Check compatibility
+mangum>=0.10.0  # Check compatibility
+python-dotenv>=1.0.0 # Check compatibility
+requests>=2.30.0  # Check compatibility
+pydantic>=2.0  # Check compatibility
+pydantic-core>=2.0  # Check compatibility
